@@ -44,13 +44,34 @@
 
   <!-- (Opcional por ahora) Prepara el jar para poder hacerlo ejecutable más adelante -->
   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.3.0</version>
-      </plugin>
-    </plugins>
-  </build>
+  	<plugins>
+    	<plugin>
+      		<groupId>org.apache.maven.plugins</groupId>
+      		<artifactId>maven-assembly-plugin</artifactId>
+      		<version>3.7.1</version>
+      		<configuration>
+        		<archive>
+          			<manifest>
+            			<mainClass>es.unican.is2.practica2.main.Runner</mainClass>
+          			</manifest>
+        		</archive>
+        		<descriptorRefs>
+          			<descriptorRef>jar-with-dependencies</descriptorRef>
+        		</descriptorRefs>
+        		<!-- Para que el nombre sea ...-jar-with-dependencies.jar -->
+        		<appendAssemblyId>true</appendAssemblyId>
+      		</configuration>
+      		<executions>
+        		<execution>
+          			<id>make-assembly</id>
+          			<phase>package</phase>
+          			<goals>
+            			<goal>single</goal>
+          			</goals>
+        		</execution>
+      		</executions>
+    	</plugin>
+  	  </plugins>
+	</build>
 
 </project>

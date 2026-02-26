@@ -14,7 +14,6 @@ import es.unican.is2.practica2.domain.Seguro;
 
 public class ClientesDAO implements IClientesDAO {
 
-    @Override
     public Cliente creaCliente(Cliente c) throws DataAccessException {
     	
         String insertStatement = String.format(
@@ -27,7 +26,6 @@ public class ClientesDAO implements IClientesDAO {
         return c;
     }
 
-    @Override
     public Cliente cliente(String dni) throws DataAccessException {
     	
         Cliente result = null;
@@ -57,7 +55,6 @@ public class ClientesDAO implements IClientesDAO {
         return result;
     }
 
-    @Override
     public Cliente actualizaCliente(Cliente nuevo) throws DataAccessException {
     	
         Cliente old = cliente(nuevo.getDni());
@@ -88,7 +85,6 @@ public class ClientesDAO implements IClientesDAO {
         return cliente(nuevo.getDni());
     }
 
-    @Override
     public Cliente eliminaCliente(String dni) throws DataAccessException {
     	
         Cliente cliente = cliente(dni);
@@ -100,7 +96,6 @@ public class ClientesDAO implements IClientesDAO {
         return cliente;
     }
 
-    @Override
     public List<Cliente> clientes() throws DataAccessException {
     	
         List<Cliente> clientes = new LinkedList<>();
