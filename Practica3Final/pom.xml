@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>es.unican.is2</groupId>
-  <artifactId>practica3-inicial</artifactId>
+  <artifactId>practica3-final</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>practica3-inicial</name>
+  <name>practica3-final</name>
 
   <properties>
     
@@ -16,14 +16,13 @@
     <maven.compiler.source>21</maven.compiler.source>
     
     <!-- Propiedades para usar SonarQube en local-->
-    <!--<sonar.host.url>http://localhost:9000</sonar.host.url>-->
     
     <!-- modificar este token por el vuestro -->
-    <!--<sonar.token>120537998e2c122476f30cade8d4a25865210fa6</sonar.token>-->
-
+    <!-- El token de Sonar se pasa por línea de comandos o variable de entorno -->
+    
     <!-- Propiedades para usar SonarCloud -->
-    <sonar.projectKey>Seguros-Inicial-Medrano</sonar.projectKey>
-    <sonar.projectName>Seguros-Inicial-Medrano</sonar.projectName>
+    <sonar.projectKey>Seguros-Final-Medrano</sonar.projectKey>
+    <sonar.projectName>Seguros-Final-Medrano</sonar.projectName>
   </properties>
   
   <!-- Nombres de los directorios que contienen los módulos. Asegurar que 
