@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>es.unican.is2</groupId>
+  <artifactId>practica3-final</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>practica3-final</name>
+
+  <properties>
+    
+    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    
+    <!-- Propiedades para usar SonarQube en local-->
+    
+    <!-- modificar este token por el vuestro -->
+    <!-- El token de Sonar se pasa por línea de comandos o variable de entorno -->
+    
+    <!-- Propiedades para usar SonarCloud -->
+    <sonar.projectKey>Seguros-Final-Medrano</sonar.projectKey>
+    <sonar.projectName>Seguros-Final-Medrano</sonar.projectName>
+  </properties>
+  
+  <!-- Nombres de los directorios que contienen los módulos. Asegurar que 
+  se correspondan con vuestros directorios -->
+  <modules>
+    <module>seguros-common</module>
+    <module>seguros-business</module>
+    <module>seguros-daoh2</module>
+    <module>seguros-gui</module>
+    <module>seguros-main</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>seguros-common</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>seguros-business</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>seguros-daoh2</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>seguros-gui</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>seguros-main</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>
