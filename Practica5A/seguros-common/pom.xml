@@ -13,6 +13,11 @@
 
   <artifactId>seguros-common</artifactId>
   <packaging>jar</packaging>
+  
+  <properties>
+	  <maven.compiler.source>25</maven.compiler.source>
+	  <maven.compiler.target>25</maven.compiler.target>
+  </properties>
 
   <name>seguros-common</name>
 
