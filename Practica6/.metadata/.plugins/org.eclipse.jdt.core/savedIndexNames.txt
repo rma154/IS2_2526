@@ -1,0 +1,13 @@
+INDEX VERSION 1.131+C:\Users\Quincho\Desktop\UNI\CUARTO\2ndo CUATRI\Ingeniería Software II\Practica6\Pract06\.metadata\.plugins\org.eclipse.jdt.core
+3000384754.index
+880637627.index
+4072779519.index
+3106920059.index
+3743454198.index
+1865797976.index
+10895767.index
+1126874798.index
+400579419.index
+2322080645.index
+2199252452.index
+1380301604.index
